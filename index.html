@@ -4,93 +4,102 @@
     <meta charset="utf-8" >
 
 <title>xiaopangfeiyu&#39;s blog</title>
-<meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://xiaopangfeiyu.github.io/favicon.ico?v=1622531007122">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://xiaopangfeiyu.github.io/favicon.ico?v=1622531045497">
 <link rel="stylesheet" href="https://xiaopangfeiyu.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+
+    <meta name="description" content="">
+    
   </head>
   <body>
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://xiaopangfeiyu.github.io">xiaopangfeiyu&#39;s blog</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://xiaopangfeiyu.github.io">
+        <img src="https://xiaopangfeiyu.github.io/images/avatar.png?v=1622531045497" class="site-logo">
+        <h1 class="site-title">xiaopangfeiyu&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="/" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
+      
         
-      </ul>
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-</nav>
-
-
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://xiaopangfeiyu.github.io/post/hboi2021/">HBOI2021</a>
-    </h2>
-    <p class="article-meta">
-      2021-06-01
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    </p>
-    <p class="text-lead">
-      <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="sans-serif">A</mi></mrow><annotation encoding="application/x-tex">\sf A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf">A</span></span></span></span></span>卷</p>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://xiaopangfeiyu.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://xiaopangfeiyu.github.io/post/hboi2021/">
+                  <h2 class="post-title">HBOI2021</h2>
+                </a>
+                <div class="post-date">
+                  2021-06-01
+                </div>
+                <div class="post-abstract">
+                  <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="sans-serif">A</mi></mrow><annotation encoding="application/x-tex">\sf A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf">A</span></span></span></span></span>卷</p>
 <h3 id="320-省选前集训1">3.20-省选前集训1</h3>
 <p>两个数据结构一个字符串。</p>
 <p>第一，三题 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>30</mn></mrow><annotation encoding="application/x-tex">30</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">0</span></span></span></span> 先拿了。</p>
@@ -113,83 +122,36 @@
 <p>黑题那没事了。</p>
 <h3 id="43-省选前集训2">4.3-省选前集训2</h3>
 
-    </p>
-    <div class="row">
-      <a href="https://xiaopangfeiyu.github.io/post/hboi2021/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
+                </div>
+              </div>
+              
+            </article>
+          
 
+          <div class="pagination-container">
+  
+  
+</div>
 
         </div>
-        
-        <div class="row flex-edges">
-  
-  
-</div>
-
       </div>
-      
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://xiaopangfeiyu.github.io/images/avatar.png?v=1622531007122" class="no-responsive avatar">
-    <div class="text-muted"></div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://xiaopangfeiyu.github.io/post/hboi2021/">HBOI2021</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-    </div>
-  </div>
-  <div class="paper">
-     | <a class="rss" href="https://xiaopangfeiyu.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
 
-    </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
 <script type="application/javascript">
 
 AOS.init();
 
-hljs.initHighlightingOnLoad()
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
+
+
 
 
 
