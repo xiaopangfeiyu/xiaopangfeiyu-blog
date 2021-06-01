@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>NOIP2018 | xiaopangfeiyu&#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://xiaopangfeiyu.github.io/favicon.ico?v=1622531806724">
+<link rel="stylesheet" href="https://xiaopangfeiyu.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="目录
+
+
+Day - n
+
+
+Day 1
+
+
+Day n
+
+
+Day -n
+从寒假到暑假再到现在，我这个蒟蒻从四年级升到了五年级
+考前每周日都刷一些题,一共做了130道了.
+目前学到了 模拟 ，函数 ， 排序 ， 基础贪心 ，期望 普及22..." />
+    <meta name="keywords" content="游记" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://xiaopangfeiyu.github.io">
+        <img src="https://xiaopangfeiyu.github.io/images/avatar.png?v=1622531806724" class="site-logo">
+        <h1 class="site-title">xiaopangfeiyu&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      振兴湖北OI,FZ义不容辞
+    </div>
+    <div class="site-footer">
+      猪之家 | <a class="rss" href="https://xiaopangfeiyu.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">NOIP2018</h2>
+            <div class="post-date">2021-06-01</div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="目录">目录</h2>
+<ul>
+<li>
+<p>Day - n</p>
+</li>
+<li>
+<p>Day 1</p>
+</li>
+<li>
+<p>Day n</p>
+</li>
+</ul>
+<h2 id="day-n">Day -n</h2>
+<p>从寒假到暑假再到现在，我这个蒟蒻从四年级升到了五年级</p>
+<p>考前每周日都刷一些题,一共做了<s>130道</s>了.</p>
+<p>目前学到了 模拟 ，函数 ， 排序 ， 基础贪心 ，期望 普及220分</p>
+<h2 id="day-1">Day 1</h2>
+<p>前一天我来考场试机，避开了足球队颠球考试</p>
+<p>第一题：标题统计</p>
+<p>10分钟后搞定了</p>
+<p>第二题：龙虎斗</p>
+<p>简单粗暴地模拟，可是却出乎意料的炸了</p>
+<p>奇怪了？一个maxx记录大的minx记录小的，l和r记录左右.</p>
+<p>没问题呀！越想越急躁,终于过了很久，小样例都过了</p>
+<p>去找大样例，发现没解压，直接打开要密码，</p>
+<p>密码没有在大屏幕上显示！</p>
+<p>过了半天不记得是找了监考老师，还是大屏重新放上密码</p>
+<p>反正测了大样例，过了，想起数据很大 , 便把<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>n</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">int</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span></span></span></span>变成<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>o</mi><mi>n</mi><mi>g</mi><mi>l</mi><mi>o</mi><mi>n</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">long long</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span></p>
+<p>稳200了，去骗第3，4题的分吧！</p>
+<p>通过大眼观察法</p>
+<p>t3:巨难的动态规划</p>
+<p>t4:二叉树神仙题</p>
+<p>果断放弃.</p>
+<p>剩下30分钟，既然已经稳200拿就扫雷吧！</p>
+<h2 id="day-n-2">Day n</h2>
+<p>分数一出来……</p>
+<p>……</p>
+<p>……</p>
+<p>……</p>
+<p>……</p>
+<p>……</p>
+<p>142分第二题直接炸掉只得几十分还好3，4补了点分</p>
+<p>结果：pj 2=</p>
+<p>HB 1= 线：180</p>
+<p>不过这年fz还没来，不然就要被虐了.</p>
+<p><a href="https://www.luogu.com.cn/blog/pig/csp2019-you-ji"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">P</mi><mn mathvariant="sans-serif">2019</mn></mrow><annotation encoding="application/x-tex">\sf CSP2019</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf">C</span><span class="mord mathsf">S</span><span class="mord mathsf">P</span><span class="mord mathsf">2</span><span class="mord mathsf">0</span><span class="mord mathsf">1</span><span class="mord mathsf">9</span></span></span></span></span></a></p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://xiaopangfeiyu.github.io/tag/c27InJPg6/" class="tag">
+                    游记
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://xiaopangfeiyu.github.io/post/csp2019/">
+                  <h3 class="post-title">
+                    CSP2019
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>CSP2019 | xiaopangfeiyu&#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://xiaopangfeiyu.github.io/favicon.ico?v=1622531806724">
+<link rel="stylesheet" href="https://xiaopangfeiyu.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="目录
+
+
+Day - n
+
+
+Day 0
+
+
+Day 1
+
+
+Day 2
+
+
+Day n
+
+
+总结
+
+
+
+Day -n
+几十天下午做一堆了题，速切120道题，陆续开始做紫题，
+估值快速上升，题解连写几篇
+持续打卡，开始写学习笔记
+开始学习 ..." />
+    <meta name="keywords" content="游记" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://xiaopangfeiyu.github.io">
+        <img src="https://xiaopangfeiyu.github.io/images/avatar.png?v=1622531806724" class="site-logo">
+        <h1 class="site-title">xiaopangfeiyu&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      振兴湖北OI,FZ义不容辞
+    </div>
+    <div class="site-footer">
+      猪之家 | <a class="rss" href="https://xiaopangfeiyu.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">CSP2019</h2>
+            <div class="post-date">2021-06-01</div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="目录">目录</h2>
+<ul>
+<li>
+<p>Day - n</p>
+</li>
+<li>
+<p>Day 0</p>
+</li>
+<li>
+<p>Day 1</p>
+</li>
+<li>
+<p>Day 2</p>
+</li>
+<li>
+<p>Day n</p>
+</li>
+<li>
+<p>总结</p>
+</li>
+</ul>
+<hr>
+<h2 id="day-n">Day -n</h2>
+<p>几十天下午做一堆了题，速切120道题，陆续开始做紫题，</p>
+<p>估值快速上升，题解连写几篇</p>
+<p>持续打卡，开始写学习笔记</p>
+<p>开始学习 恶心DP , 莫队，差分约束 , KMP ，tarjan , 线段树，高斯消元</p>
+<p>预计 tg 350 pj 300</p>
+<h2 id="day-0">Day 0</h2>
+<p>下午没做几题，只是把做题数凑成了400</p>
+<p>听说做多少道题，分数上线就是多少……</p>
+<p>晚上去上数学课，上完去操场打球</p>
+<p>希望明天考好……</p>
+<h2 id="day-1">Day 1</h2>
+<p>一看题目，原本是期望D1 200分，结果似乎要<strong>被</strong>AK了.</p>
+<p>t1想了15分钟，想到了对称，把对称下标用数组记录下来.</p>
+<p>逐渐打了出来，时间过去了40分钟，一测样例，发现炸了.</p>
+<p>又调了20分钟，t1过了，可是因为水平不知道要开ull.</p>
+<p>t2想了一会就打了一个常数很小的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">n^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>，</p>
+<p>代码一测大样例发现又炸了.</p>
+<p>开始调代码，自制样例</p>
+<p>突然准考证和考试须知一起掉进了桌边的缝里.</p>
+<p>一看，发现拿不出来了.</p>
+<p>赶紧叫老师，老师说没事，便走了.</p>
+<p><s>老师你确定没事，为什么前面的那位老师说没考试须知，直接判0</s></p>
+<p>回去打t2发现原来是题看错了，秒切小样例.</p>
+<p>大样例直接爆炸.</p>
+<p>希望能得60~80.</p>
+<p>t3直接贪心，剩下的10分钟开始下国际象棋.</p>
+<p>今年tg真难！</p>
+<hr>
+<p>中午在罗森吃饭，走路时碰到Fz,他估分210，%%%.</p>
+<p>中午睡了会儿觉，下午考普及</p>
+<hr>
+<p>考普及以为又要<strong>被</strong>AK,</p>
+<p>看了看题目却发现不难</p>
+<p>5分钟时AC第一题</p>
+<p>45分钟打完第二题，一样，又炸了.</p>
+<p>开始调,20分钟后调完了，大样例全A</p>
+<p><s>今年是不是要AK</s></p>
+<p>开始看t3，我吸取了摆渡车的教训，</p>
+<p>直接……<s>跳过去了</s></p>
+<p>看t4似乎是个最短路板子</p>
+<p>打出来后发现要按奇偶分最短路</p>
+<p>4:34第四题A了</p>
+<p>回去看t3，得出了一个结论：</p>
+<p>这题和摆渡车一样都是DP，<s>都要跳过</s></p>
+<p>想了半天转移方程，想不出来</p>
+<p>打了10分，玩小恐龙，得了4740分（rp++）</p>
+<p>只剩15分钟，开始下国际象棋，<br>
+pj估分310</p>
+<h2 id="day-2">Day 2</h2>
+<p>昨天tg洛谷里难度出来了：橙 蓝 黑</p>
+<p>大家认为D1D2难度交换且增大了，希望翻盘</p>
+<p>打开题目一看……</p>
+<p>……</p>
+<p>……</p>
+<p>没救了！</p>
+<p>……</p>
+<p>……</p>
+<p>……</p>
+<p>果然是紫，黑，黑难度吗！</p>
+<p>希望t1 DP能做，想了20分钟，左边的巨佬似乎第一题已经过了……</p>
+<p>60分钟后我发现，<s>我不会做……</s></p>
+<p>打部分分12分走人，</p>
+<p>t2,额……</p>
+<p>双向链表+贪心 估计0分走人</p>
+<p>t3，诶，有线性数据.估计15分走人</p>
+<p>打部分分比打正解还难，打完直接结束</p>
+<p>tg果然炸了，估分80+40+0+12+0+15=147</p>
+<p>回家洛谷一测80+65+0+12+4+0=161</p>
+<p>比估分高一点，可是D2T3是什么情况？</p>
+<p>fz D1洛谷一测果然210</p>
+<p>他说D1没有AK，十分沮丧……</p>
+<h2 id="day-n-2">Day n</h2>
+<p>成绩出来tg分数160：90+50+0+12+8+0</p>
+<p>pj 刚拿到程序回家一测</p>
+<p>……</p>
+<p>……</p>
+<p>第二题重载运算符bool没写</p>
+<p>从来不知道到要写……</p>
+<p>code_blocks 编译通过</p>
+<p>洛谷编译不通过</p>
+<p>原因是编译版本不一样</p>
+<p>310 - - &gt; 210</p>
+<p>还好t4过了</p>
+<hr>
+<p>pj成绩出来110:100+0+10+0</p>
+<p>?！</p>
+<p>洛谷官方数据再交：AC</p>
+<p>牛客再交：AC</p>
+<p>?</p>
+<p>只好发了一个帖</p>
+<p>有人说我的数组<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn><mo>∗</mo><mn>1</mn><mi>e</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">7 * 1e7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">7</span></span></span></span>太大了</p>
+<p>说<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi>e</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">1e7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">7</span></span></span></span>是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>38</mn><mi>M</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">38MB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">8</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn><mo>∗</mo><mn>1</mn><mi>e</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">7 * 1e7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">7</span></span></span></span>是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>266</mn><mi>M</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">266MB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">6</span><span class="mord">6</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span></p>
+<p>而题目要求<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>256</mn><mi>M</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">256MB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">5</span><span class="mord">6</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span></p>
+<p>但洛谷评测记录写着的是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>12</mn><mi>M</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">12MB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>或<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>7</mn><mi>M</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">7MB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">7</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span></p>
+<p>?</p>
+<p>又有大佬说洛谷会省略没用的空间</p>
+<p>牛客也是这样吗?</p>
+<p>?</p>
+<p>花了半天弄出来发现真开大了</p>
+<p>没人说过<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi>e</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">1e7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">7</span></span></span></span>会炸啊！</p>
+<p>平时我都开的是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi>e</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">1e8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">8</span></span></span></span>呀！</p>
+<p>考前自我写的注意事项中数组是能开多打开多大啊！</p>
+<pre><code>  -200    
+</code></pre>
+<p>310 - - &gt; 110</p>
+<p>1= HB rank 1~10 --&gt; 2=~3= HB rank 100+</p>
+<p>……</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi><mi>Z</mi></mrow><annotation encoding="application/x-tex">FZ</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord mathdefault" style="margin-right:0.07153em;">Z</span></span></span></span>考了300多分</p>
+<h1 id="总结">总结</h1>
+<ul>
+<li>提高组
+<ul>
+<li>
+<p>贪心通常不得分</p>
+</li>
+<li>
+<p>打部分分得分很少</p>
+</li>
+<li>
+<p>搜索暴力得分很多</p>
+</li>
+<li>
+<p>尽可能考虑到所有极端数据</p>
+</li>
+</ul>
+</li>
+<li>普及组
+<ul>
+<li>
+<p>程序写完后要在DEV-c++重测一次</p>
+</li>
+<li>
+<p>重载运算符要写函数类型</p>
+</li>
+<li>
+<p>数组只能开到<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi>e</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">1e6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">6</span></span></span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021-更新">2021 更新</h2>
+<p>突然发现，DAY1T2因为一个小的细节而没有满分！</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://xiaopangfeiyu.github.io/tag/c27InJPg6/" class="tag">
+                    游记
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://xiaopangfeiyu.github.io/post/cspnoip-2020/">
+                  <h3 class="post-title">
+                    CSP/NOIP 2020
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

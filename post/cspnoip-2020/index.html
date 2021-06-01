@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>CSP/NOIP 2020 | xiaopangfeiyu&#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://xiaopangfeiyu.github.io/favicon.ico?v=1622531806724">
+<link rel="stylesheet" href="https://xiaopangfeiyu.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="PJ 考场都去错了……
+第一题lowbit
+直接右移也行
+再看第二道 区间第k大，这k还是不固定的，先没管。
+第三道不会放弃。
+第四道，显然dp[i][j]表走到第i行第j个的和。
+前缀和一下O(nm2)O(nm^2)O(nm2)
+因为细节..." />
+    <meta name="keywords" content="游记" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://xiaopangfeiyu.github.io">
+        <img src="https://xiaopangfeiyu.github.io/images/avatar.png?v=1622531806724" class="site-logo">
+        <h1 class="site-title">xiaopangfeiyu&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      振兴湖北OI,FZ义不容辞
+    </div>
+    <div class="site-footer">
+      猪之家 | <a class="rss" href="https://xiaopangfeiyu.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">CSP/NOIP 2020</h2>
+            <div class="post-date">2021-06-01</div>
+            
+            <div class="post-content" v-pre>
+              <p>PJ 考场都去错了……</p>
+<p>第一题lowbit</p>
+<p>直接右移也行</p>
+<p>再看第二道 区间第k大，这k还是不固定的，先没管。</p>
+<p>第三道不会放弃。</p>
+<p>第四道，显然dp[i][j]表走到第i行第j个的和。</p>
+<p>前缀和一下<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><msup><mi>m</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(nm^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<p>因为细节错误调了1.5小时。</p>
+<p>再看第二道。</p>
+<p>有优先队列的感觉。</p>
+<p>之后发现一个大根堆一个小根堆即可。</p>
+<p>不记得要用top,以为是front</p>
+<p>翻了半天头文件源代码找到了</p>
+<p>还剩40分钟。</p>
+<p>再看第三道。</p>
+<p>没找出性质。</p>
+<p>检查一会交卷。</p>
+<p>因为走错考场所以用U盘拷上去教。</p>
+<p>后来发现csp文件夹是小写。</p>
+<p>不过它一直是小写。</p>
+<p>也不清楚了。</p>
+<p>100+100+0+70=270</p>
+<p>据说有些T2</p>
+<p>O(600n)桶排</p>
+<p>不过应该跑不过O(nlogn)</p>
+<p>要被卡</p>
+<hr>
+<p>各个题面臃肿</p>
+<p>第一题显然暴力。</p>
+<p>打了2小时只打了0~60分。</p>
+<p>码力太差了。</p>
+<p>也算不清楚。</p>
+<p>就去看题4</p>
+<p>找到了一个假的性质</p>
+<p>打了20分</p>
+<p>再看题2</p>
+<p>题目没太看懂。</p>
+<p>把模拟代码打出来过两个小样例。</p>
+<p>没过大样例。</p>
+<p>不知道q有什么用。</p>
+<p>估计0~60分</p>
+<p>0<sub>60+0</sub>60+0+20</p>
+<hr>
+<p>普及<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">T2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord">2</span></span></span></span>原来是在考场上发明了对顶堆。</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">T3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord">3</span></span></span></span>简单优化一下就行了。</p>
+<p>普及省第一是什么鬼 。</p>
+<hr>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mi>o</mi><mi>i</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">noip</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">n</span><span class="mord mathdefault">o</span><span class="mord mathdefault">i</span><span class="mord mathdefault">p</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">T1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord">1</span></span></span></span> 半小时做了 。</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">T2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord">2</span></span></span></span> 不会，弃掉了 。</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">T3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord">3</span></span></span></span> 想了 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>60</mn></mrow><annotation encoding="application/x-tex">60</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mord">0</span></span></span></span> 分做法 ，打了几小时写炸了 。</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">T4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord">4</span></span></span></span> 写了部分分写炸了 。</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">T2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord">2</span></span></span></span> 写了骗分暴力写炸了 。</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">T1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord">1</span></span></span></span> 先乘后除变成 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>60</mn></mrow><annotation encoding="application/x-tex">60</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mord">0</span></span></span></span> 分 。</p>
+<p>成为参加省选 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mi>o</mi><mi>i</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">noip</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">n</span><span class="mord mathdefault">o</span><span class="mord mathdefault">i</span><span class="mord mathdefault">p</span></span></span></span> 倒数第三 。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://xiaopangfeiyu.github.io/tag/c27InJPg6/" class="tag">
+                    游记
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://xiaopangfeiyu.github.io/post/20214-5-ti/">
+                  <h3 class="post-title">
+                    2021.4-5题
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
